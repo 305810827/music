@@ -1,0 +1,111 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: "微软雅黑", 'Microsoft YaHei';
+}
+ul,li {
+	list-style: none;
+}
+html,body{
+	height: 100%;
+}
+body{
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0px auto;
+}
+#app{
+	height:100%;
+}
+.container {
+	margin: 0px auto;
+	height:100%;
+}
+
+/* 顶部搜索 */
+.top {
+	height: 42px;
+	background-color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 5px;
+}
+.top>span {
+	height: 42px;
+	font-size: 25px;
+	color: black;
+	line-height: 42px;
+}
+.top>input {
+	width: 75%;
+	height: 33px;
+	padding: 0px 15px;
+	background-color: #f7f7f7;
+	font-size: 18px;
+	color: #c8c8c8;
+	line-height: 42px;
+	border: none;
+	outline: none;
+	border-radius: 15px;
+}
+
+/* 底部导航 */
+.tabBox {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: 999;
+}
+
+.bottomTab {
+	height: 60px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 999;
+}
+
+.bottomTab ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.bottomTab ul li {
+	display: inline-block;
+	text-align: center;
+}
+
+.bottomTab ul li span {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	font-size: 20px;
+	color: #666666;
+	line-height: 28px;
+}
+
+.bottomTab ul li:first-child span {
+	border-radius: 50%;
+	background-color: #ff4c42;
+	color: white;
+	text-align: center;
+}
+
+.bottomTab ul li p {
+	font-size: 12px;
+	color: #666666;
+}
+@media (max-width: 390px) {
+    .tabBox{
+        width: 390px;
+    }
+}
+@media (min-width: 640px) {
+    .tabBox{
+        width: 640px;
+    }
+}
